@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Series Planner
+
+Starting with comic page layout planning for rapid story development. Grow into a full story development tool.
+
+## Initially Built with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
