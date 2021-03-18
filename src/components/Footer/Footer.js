@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="app-banner">
+    <footer className="app-base">
       <p>&copy; Myron R Schippers Jr</p>
     </footer>
   );
