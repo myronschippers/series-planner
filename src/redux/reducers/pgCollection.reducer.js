@@ -1,4 +1,9 @@
-const pgCollectionReducer = (state = [], action) => {
+const samplePage = {
+  title: 'Sample Page',
+};
+const defaultState = [samplePage];
+
+const pgCollectionReducer = (state = defaultState, action) => {
   switch (action.type) {
     case 'SET_PG_COLLECTION':
       return action.payload;
