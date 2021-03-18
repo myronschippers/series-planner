@@ -18,6 +18,10 @@ function AddPgLayout() {
       type: 'ADD_TO_PG_COLLECTION',
       payload: newPage,
     });
+
+    setNewPage({
+      title: '',
+    });
   }
 
   function changeField(fieldKey, event) {
@@ -34,6 +38,7 @@ function AddPgLayout() {
       <TextField
         label="Page Title"
         required
+        value={newPage.title}
         onChange={(event) => changeField('title', event)}
       />
 
