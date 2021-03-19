@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
+// CUSTOM COMPONENTS
+import Panel from '../Panel/Panel';
+
 // MATERIAL-UI COMPONENTS
 import { TextField, Button } from '@material-ui/core';
 
@@ -32,18 +35,20 @@ function AddPgLayout() {
   }
 
   return (
-    <form onSubmit={submitNewPageHandler}>
-      <p>{JSON.stringify(newPage)}</p>
+    <Panel>
+      <form onSubmit={submitNewPageHandler}>
+        <p>{JSON.stringify(newPage)}</p>
 
-      <TextField
-        label="Page Title"
-        required
-        value={newPage.title}
-        onChange={(event) => changeField('title', event)}
-      />
+        <TextField
+          label="Page Title"
+          required
+          value={newPage.title}
+          onChange={(event) => changeField('title', event)}
+        />
 
-      <Button type="submit">Add Page</Button>
-    </form>
+        <Button type="submit">Add Page</Button>
+      </form>
+    </Panel>
   );
 }
 
