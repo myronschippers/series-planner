@@ -22,6 +22,8 @@ function AddPgLayout() {
       payload: newPage,
     });
 
+    dispatch({ type: 'CLOSE_ADD_PAGE' });
+
     setNewPage({
       title: '',
     });
@@ -35,20 +37,16 @@ function AddPgLayout() {
   }
 
   return (
-    <Panel>
-      <form onSubmit={submitNewPageHandler}>
-        <p>{JSON.stringify(newPage)}</p>
+    <form onSubmit={submitNewPageHandler}>
+      <TextField
+        label="Page Title"
+        required
+        value={newPage.title}
+        onChange={(event) => changeField('title', event)}
+      />
 
-        <TextField
-          label="Page Title"
-          required
-          value={newPage.title}
-          onChange={(event) => changeField('title', event)}
-        />
-
-        <Button type="submit">Add Page</Button>
-      </form>
-    </Panel>
+      <Button type="submit">Add Page</Button>
+    </form>
   );
 }
 
