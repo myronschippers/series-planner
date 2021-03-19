@@ -38,3 +38,25 @@
   margin: 0 auto 10px;
   transition: width 0.3s ease, height 0.3s ease;
 }
+
+.dialog-tight {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-tight__block {
+  display: flex;
+  justify-content: center;
+}
+
+.dialog-tight__block--lean-right {
+  justify-content: flex-end;
+}
+
+.dialog-tight__block--lean-left {
+  justify-content: flex-start;
+}
+
+.dialog-tight__block + .dialog-tight__block {
+  margin-top: 1.2rem;
+}
