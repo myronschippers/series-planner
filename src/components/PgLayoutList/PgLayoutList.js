@@ -1,5 +1,3 @@
-import { useSelector } from 'react-redux';
-
 // CUSTOM COMPONENT
 import PgLayout from '../PgLayout/PgLayout';
 
