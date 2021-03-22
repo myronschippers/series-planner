@@ -1,9 +1,10 @@
 const panelStyle = {
   boxSizing: 'border-box',
   width: '100%',
-  padding: '0 0 75% 0',
+  padding: '0 0 45% 0',
+  margin: '0 0 10rem 0',
   position: 'relative',
-  border: `1px solid #323232`,
+  border: `4px solid #323232`,
 };
 
 const descStyle = {
